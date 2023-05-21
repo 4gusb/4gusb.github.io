@@ -108,31 +108,42 @@ body{
     transition: 0.5s;
 }
 
+nav .fa-solid{
+    display: none;
+}
+
+
+
 /* CONFIGURACIONES MOBILE */
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:500px){
 
     .header{
+        margin: 2% 2%;
         flex-direction: column;
-        height: auto;        
+        height: auto;     
+        justify-content: center;   
     }
     
     .header nav{
+        padding: 0% 10%;
         order: 2;
         margin-top: 20px;
     }
 
     .header nav img{
-        width: 12%;
+        width: 10%;
         height: auto;
     }
 
     .text-box{
+        padding: 0 10%;
         top: 30%;
         left: 45%;
         order: 1;
         width: 80%;
         margin-top: 10px;
+        justify-content: center;   
     }
 
     .text-box h1{
@@ -143,8 +154,25 @@ body{
     .text-box p{
         font-size: 15px;
         text-align: center;
-        margin: 10px 0;  
     }
+
+    .nav-links ul li{
+        display: block;
+    }
+
+    .nav-links{
+        position: absolute;
+        background: #E86A33;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+
+
 }
+
 
 
