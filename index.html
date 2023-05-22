@@ -5,33 +5,86 @@
     <title>Welcome to my website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
-    <div class="header">
-        <nav>
-            <a href="index.html"> 
-                <img src="orange.png">
-            </a>
-            <div class="nav-links">
-                <i class="fa-solid fa-xmark"></i>             
-                <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="https://www.linkedin.com/in/agustina-bregant/">CONTACT</a></li>
+    <div class="first-container">
+    <div class="overlay"></div>
+        <div class="header">
+            <nav>
+                <a href="index.html"> 
+                    <img src="orange.png">
+                </a>
+                <div class="nav-links">
+                    <i class="fa-solid fa-xmark"></i>             
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="https://www.linkedin.com/in/agustina-bregant/">CONTACT</a></li>
 
-                </ul> 
-            </div>
-            <i class="fa-solid fa-bars"></i>        
-        </nav>   
+                    </ul> 
+                </div>
+                <i class="fa-solid fa-bars"></i>        
+            </nav>   
+        </div>
     </div>
-    <div class="text-box">
-        <h1>Hola! Mi nombre es Agustina. Soy estudiante de Ingenieria en Informatica</h1>
-        <p>Blablablablablablablablablablabla
-            blablablablablablablablabla.
-        </p>
-        <a href="" class="hero-btn">About me</a>
-    </div>
+
+        <div class="text-box">
+            <h1>Agustina M. Bregant</h1>
+            <p>Blablablablablablablablablablabla
+                blablablablablablablablabla.
+            </p>
+            <a href="#sec-container" class="hero-btn">About me</a>
+        </div>
+    </div>    
     
+
+
+<!-- About Me -->
+
+    <div class="second-container" id="sec-container">
+        <div class="about-me">
+            <h2>Hello there!</h2>   
+            <p>blablablablablablablablabla</p>
+        </div>
+        <a href="#" onclick="event.preventDefault()"> 
+            <img src="me.jpg" >
+        </a>
+    </div>
+
+
+<!-- --------JavaScript for Toggle Menu  -->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+        document.body.classList.add("menu-open");
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+        document.body.classList.remove("menu-open");
+    }
+</script>
+
+
+<!-- Scroll Reveal -->
+
+<script>
+    ScrollReveal().reveal('.first-container', {
+      delay: 200, 
+      duration: 800, // Duración de la animación en milisegundos
+      origin: 'top', // Origen desde donde se revelará el contenido ('left', 'right', 'top', 'bottom', etc.)
+      distance: '200px', // Distancia de desplazamiento o tamaño de la revelación
+      easing: 'ease-in', // Curva de animación ('linear', 'ease-in', 'ease-out', 'ease-in-out', etc.)
+      reset: true // Reinicia la animación en cada desplazamiento
+    });
+  </script>
+
+
+
 </body>
 </html>
 
