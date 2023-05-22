@@ -1,8 +1,24 @@
 
 body{
-    background-color: #F0A04B;
+    background-color: #E3CCAE;
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+    padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }  
+
+.first-container{ 
+    height: 100vh;
+}
+
+.second-container{
+    background-color: #262A56;
+    height: 100vh;
+    position: relative;
+}
 
 .header{
     width: 1200px;
@@ -16,7 +32,6 @@ body{
 .header text{
     font-size: 40px;
     font-weight: bold;
-    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;;
     color: #E86A33;
 }
 
@@ -33,13 +48,15 @@ body{
     position: relative;
 }
 
+
+/* ------menu links---- */
+
 .nav-links{
     flex: 1;
     text-align: right;
 }
 
 .nav-links ul li{
-    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;;
     list-style: none;
     display: inline-block;
     padding: 5px 12px;
@@ -49,7 +66,7 @@ body{
 
 .nav-links ul li a{
     font-size: 20px;
-    color: #263A29;
+    color: #E86A33;
     text-decoration: none;
 }
 
@@ -57,7 +74,7 @@ body{
     content: '';
     width: 0%;
     height: 2px;
-    background-color: #263A29;
+    background-color: #E86A33;
     display: block;
     margin: auto;
     transition: 0.8s;
@@ -68,15 +85,17 @@ body{
     width: 100%;
 }
 
+
+/* ------text box--- */
+
 .text-box{
-    width: 40%;
-    color: #263A29;
-    position: absolute;
-    top: 40%;
+    width: 50%;
+    color: #E86A33;
+    position: relative;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
 
 .text-box h1{
@@ -88,28 +107,62 @@ body{
     font-size: 20px;
 }
 
+
+/* ----button----- */
+
 .hero-btn{
     display: inline-block;
     text-decoration: none;
-    color: #E86A33;
-    border: 5px transparent;
-    padding: 5px 40px;
+    padding: 5px 30px;
     font-size: 20px;
-    background-color: #263A29;
-    border-radius: 20px;
+    border-radius: 50px;
     position: relative;
     cursor: pointer;
-    font-weight: bolder;
+    font-weight: bolder;    
+    color: #E3CCAE;
+    background-color: #E86A33;
 }
 
 .hero-btn:hover{
-    background-color: #E86A33;
-    color: #263A29;
-    transition: 0.5s;
+    transition: 0.4s;
+    background-color: #c95929;
 }
 
 nav .fa-solid{
     display: none;
+}
+
+
+/* -----about me------ */
+
+.about-me{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 50px;
+}
+
+.about-me h2{
+    font-size: 40px;
+    color: #E3CCAE;
+}
+
+.about-me p{
+    font-size: 25px;
+    color: #000000;
+    font-weight: bolder;
+}
+
+.second-container img{
+    width: 300px;
+    height: auto;    
+    margin-left: 70%;
+    border-radius: 40px;
+    transition: transform 0.3s ease;
+}
+
+.second-container img:hover{
+    transform: scale(1.1);
 }
 
 
