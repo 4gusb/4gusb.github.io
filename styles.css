@@ -20,6 +20,28 @@ html {
     position: relative;
 }
 
+.third-container{
+    background-color: #E86A33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fourth-container{
+    justify-content: center;
+    align-items: center;
+    background-color: #262A56;
+    height: 25vh;
+    flex-direction: row;
+
+} 
+
+
+
+/* FIRST CONTAINER */
+
+
 .header{
     width: 1200px;
     height: 50px;
@@ -121,10 +143,11 @@ html {
     font-weight: bolder;    
     color: #E3CCAE;
     background-color: #E86A33;
+    transition: 0.2s ease-in-out;
+
 }
 
 .hero-btn:hover{
-    transition: 0.4s;
     background-color: #c95929;
 }
 
@@ -132,12 +155,16 @@ nav .fa-solid{
     display: none;
 }
 
+/* SECOND CONTAINER */
+
 
 /* -----about me------ */
 
 .about-me{
-    width: 80%;
-    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 50%;
     text-align: left;
     padding-top: 50px;
 }
@@ -148,13 +175,26 @@ nav .fa-solid{
 }
 
 .about-me p{
-    font-size: 25px;
+    font-size: 30px;
     color: #000000;
     font-weight: bolder;
+    margin-top: 40px;
+    margin-bottom: 0;
+    line-height: 60px;
+}
+
+.about-me h4{
+    font-size: 20px;
+    margin-left: 40%;
+    margin-top: 0;
 }
 
 .second-container img{
+    position: absolute;
+    top: 30%;
+    right: 10%;
     width: 300px;
+    max-width: 100%;
     height: auto;    
     margin-left: 70%;
     border-radius: 40px;
@@ -164,6 +204,123 @@ nav .fa-solid{
 .second-container img:hover{
     transform: scale(1.1);
 }
+
+
+/* THIRD CONTAINER */
+
+
+/* ----logos----- */
+
+
+/* ---main logos--- */
+
+.main-logos{
+    position: absolute;
+    flex-direction: column;
+    column-count: 2;
+    gap: 80px;
+    margin-top: 80px;
+    margin-left: 50%;
+}
+
+.main-logos div:first-child{
+    transform: translateY(-150%) translateX(-10%);
+}
+
+.main-logos div:nth-child(2){
+    transform: translateY(-90%) translateX(20%);;
+}
+
+.main-logos div:last-child {
+    transform: translateY(-90%) translateX(-30%);
+}
+  
+.main-logos img{
+    width: 100px;
+    height: auto;
+}
+
+
+
+/* ----other logos---- */
+
+
+.other-logos{
+    flex-direction: column;
+    column-count: 2;
+    gap: 100px;
+    margin-top: 600px;
+    margin-left: 400px;
+    margin-bottom: 50px;
+
+}
+
+.other-logos div:first-child{
+    transform: translateY(-100%) translateX(130%);
+}
+
+.other-logos div:nth-child(2){
+    transform: translateY(-140%) translateX(-10%);;
+}
+
+.other-logos div:last-child {
+    transform: translateY(-120%) translateX(-20%);
+}
+  
+.other-logos img{
+    width: 100px;
+    height: auto;
+}
+
+
+
+
+.third-container h3{
+    font-size: 20px;
+    margin-top: 600px;
+    color: #000000;
+}
+
+.third-container a{
+    color: #000000;
+    transition: 0.3s ease-in-out;
+}
+
+.third-container a:hover{
+    color: #E3CCAE;
+}
+
+
+
+/* -----fourth container--- */
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.social img{
+    width: 50px;
+    padding: 10px;
+}
+
+.mail{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.mail a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #E3CCAE;
+}   
+
+
 
 
 
@@ -229,7 +386,7 @@ nav .fa-solid{
         right: -200px;
         text-align: left;
         z-index: 10000;
-        border: 40px;
+        border-radius: 40px;
         transition: right 0.3s ease;
     }
 
@@ -248,6 +405,10 @@ nav .fa-solid{
         color: #000000;
     }
 
+    .nav-links ul li::after{
+        background-color: #000000;
+    }
+
     nav .fa-solid{
         display: flex;
         font-size: 20px;
@@ -256,7 +417,7 @@ nav .fa-solid{
     
     .xmark .fa-solid{
         margin: 50px 25px;
-        color: black;
+        color: #000000;
     }
     
     .bars .fa-solid{
