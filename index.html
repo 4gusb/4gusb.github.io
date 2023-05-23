@@ -14,7 +14,7 @@
         <div class="header">
             <nav>
                 <a href=""> 
-                    <img src="orange.png">
+                    <img src=".\logos\orange.png">
                 </a>
                 <!-- MENU -->
                 <div class="bars">
@@ -62,14 +62,14 @@
     <div class="third-container" id="projects-container">
         <h2>Tengo algunos proyectos en mi <a href="https://github.com/4gusb">GitHub</a></h2>
         <div class="main-logos">
-            <div class="python"> <img src="python.png"> </div>
-            <div class="mysql"> <img src="mysql.png"> </div>
-            <div class="c"> <img src="c.png"> </div>
+            <div class="python"> <img src=".\logos\python.png"> </div>
+            <div class="mysql"> <img src=".\logos\mysql.png"> </div>
+            <div class="c"> <img src=".\logos\c.png"> </div>
         </div>
         <div class="other-logos">
-            <div class="html"> <img src="html.png"> </div>
-            <div class="css"> <img src="css.png"> </div>
-            <div class="js"> <img src="js.png"> </div>
+            <div class="html"> <img src=".\logos\html.png"> </div>
+            <div class="css"> <img src=".\logos\css.png"> </div>
+            <div class="js"> <img src=".\logos\js.png"> </div>
         </div>
         <h3>un poco</h3>
     </div>
@@ -80,7 +80,7 @@
     <div class="fourth-container" id="footer">
         <div class="social">
             <a href="https://www.linkedin.com/in/agustina-bregant/">
-                <img src="linkedin.png">
+                <img src=".\logos\linkedin.png">
             </a>
         </div>
         <div class="mail">
@@ -90,38 +90,8 @@
     </div>
 
 
-<!-- --------JavaScript for Toggle Menu  -->
 
-<script>
-    var navLinks = document.getElementById("navLinks");
-
-    function showMenu(){
-        navLinks.style.right = "0";
-        document.body.classList.add("menu-open");
-    }
-
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-        document.body.classList.remove("menu-open");
-    }
-</script>
-
-
-<!-- Scroll Reveal -->
-
-<script>
-    ScrollReveal().reveal('.first-container', {
-      delay: 200, 
-      duration: 800, // Duración de la animación en milisegundos
-      origin: 'top', // Origen desde donde se revelará el contenido ('left', 'right', 'top', 'bottom', etc.)
-      distance: '200px', // Distancia de desplazamiento o tamaño de la revelación
-      easing: 'ease-in', // Curva de animación ('linear', 'ease-in', 'ease-out', 'ease-in-out', etc.)
-      reset: true // Reinicia la animación en cada desplazamiento
-    });
-  </script>
-
-
-
+<script src="script.js"></script>
 </body>
 </html>
 
